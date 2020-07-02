@@ -1,8 +1,7 @@
-let CACHE_NAME = 'tasks';
+let CACHE_NAME = 'Tasks';
 let urlsToCache = [
   '/',
-  '/register',
-  '/login',
+  '/completed'
 ];
 
 // Install a service worker
@@ -34,7 +33,7 @@ self.addEventListener('fetch', event => {
 
 // Update a service worker
 self.addEventListener('activate', event => {
-  let cacheWhitelist = ['tasks'];
+  let cacheWhitelist = ['Tasks'];
   event.waitUntil(
     caches.keys().then(cacheNames => {
       return Promise.all(

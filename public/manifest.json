@@ -1,19 +1,19 @@
 {
-  "name": "Tasks PWA",
-  "short_name": "TASKS",
+  "name": "Tasks",
+  "short_name": "Tasks",
   "icons": [
       {
-          "src": "https://cdn4.iconfinder.com/data/icons/ios-web-user-interface-multi-circle-flat-vol-4/512/Checklist_clipboard_inventory_list_report_tasks_todo-512.png",
+          "src": "ico.png",
           "sizes": "92x92",
           "type": "image/png"
       },
       {
-          "src": "https://cdn4.iconfinder.com/data/icons/ios-web-user-interface-multi-circle-flat-vol-4/512/Checklist_clipboard_inventory_list_report_tasks_todo-512.png",
+          "src": "ico.png",
           "sizes": "144x144",
           "type": "image/png"
       },
       {
-          "src": "https://cdn4.iconfinder.com/data/icons/ios-web-user-interface-multi-circle-flat-vol-4/512/Checklist_clipboard_inventory_list_report_tasks_todo-512.png",
+          "src": "ico.png",
           "sizes": "152x152",
           "type": "image/png"
       }        

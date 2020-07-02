@@ -93,7 +93,7 @@ const TaskBox = () => {
               <input type="text" id="newtaskin" value={val} onChange={changehandler} />
               <div className="taskdivbuttons">
                 <button id="addButton" onClick={taskcreator}>
-                  <i className="icon-plus"></i>
+                <i className="fas fa-plus"></i>
                 </button>
               </div>
             </div>

@@ -11,10 +11,10 @@ const Task = (props) => {
 
   useEffect(() => {
     if (props.isDone === true) {
-      setDone(<i className="icon-check"></i>);
+      setDone(<i className="far fa-check-square"></i>);
       setStrikeclass("strikeout");
     } else {
-      setDone(<i className="icon-check-empty"></i>);
+      setDone(<i className="far fa-square"></i>);
       setStrikeclass("");
     }
   }, [props]);
@@ -44,7 +44,7 @@ const Task = (props) => {
     data.append('task', `${props.task}`);
 
     if (jd) {
-      setDone(<i className="icon-check-empty"></i>);
+      setDone(<i className="far fa-square"></i>);
       setJd(false);
       setStrikeclass("");
       data.append('isdone', "false");
@@ -60,7 +60,7 @@ const Task = (props) => {
 
       axios(config);
     } else {
-      setDone(<i className="icon-check"></i>);
+      setDone(<i className="far fa-check-square"></i>);
       setJd(true);
       setStrikeclass("strikeout");
       data.append('isdone', "true");
@@ -109,8 +109,8 @@ const Task = (props) => {
         <button id="donebtn" onClick={doneHandler}>
           {done}
         </button>
-        <button>
-          <i className="icon-remove" onClick={deleteHandler}></i>
+        <button onClick={deleteHandler}>
+          <i className="fas fa-trash"></i>
         </button>
       </div>
     </div>

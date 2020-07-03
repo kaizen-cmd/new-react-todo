@@ -24,7 +24,7 @@ const Task = (props) => {
     setVal(e.target.value);
     var data = new FormData();
     data.append("id", `${props.id}`);
-    data.append('isdone', `${props.isDone}`);
+    data.append('isdone', `${jd}`);
     data.append('task', document.getElementById(`${props.id}taskin`).value);
       var config = {
         method: "put",

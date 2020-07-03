@@ -17,7 +17,8 @@ const Task = (props) => {
       setDone(<i className="far fa-square"></i>);
       setStrikeclass("");
     }
-  }, [props]);
+    // eslint-disable-next-line
+  }, []);
 
   function taskedithandler(e) {
     setVal(e.target.value);

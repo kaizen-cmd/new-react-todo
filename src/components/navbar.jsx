@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 const NavBar = (props) => {
   const [active, setActive] = useState();
+  const [username, setUsername] = useState("Tasks");
 
   useEffect(() => {
     if (props.active === "login") {
@@ -20,6 +22,17 @@ const NavBar = (props) => {
         </>
       );
     } else if (props.active === "home") {
+      var token = localStorage.getItem("token");
+      var config = {
+        method: "get",
+        url: "https://djreacttodoapi.herokuapp.com/tasks/",
+        headers: {
+          Authorization: `${token}`,
+        },
+      };
+      axios(config).then((response) => {
+        setUsername(response.data['username']);
+      })
       setActive(
         <>
           <li className="nav-item mr-5">
@@ -57,7 +70,7 @@ const NavBar = (props) => {
     <div className="sticky-top">
       <nav className="navbar navbar-expand-sm">
         <a className="navbar-brand default" href="/">
-          Task - PWA
+          Hello, {username}
         </a>
         <button
           className="navbar-toggler"

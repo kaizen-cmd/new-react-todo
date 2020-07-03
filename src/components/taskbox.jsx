@@ -24,7 +24,7 @@ const TaskBox = () => {
   useEffect(() => {
     axios(config)
       .then(function (response) {
-        setTaskarray(response.data);
+        setTaskarray(response.data['tasks']);
       })
       // eslint-disable-next-line
   }, []);

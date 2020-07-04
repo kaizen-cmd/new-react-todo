@@ -7,7 +7,7 @@ h2, h1, p {
 }
 
 a {
-    color: #ff2e63;
+    color: #00a1ab;
 }
 
 a:hover {
@@ -24,12 +24,12 @@ a:hover {
 .active {
     color: #252a34;
     font-weight: bold;
-    background-color: white;
+    background-color: #eaeaea;
     border-radius: 20px;
 }
 
 .btn {
-    background-color: #ff2e63;
+    background-color: #00a1ab;
     color: #eaeaea;
 }
 
@@ -48,7 +48,7 @@ a:hover {
 }
 
 .form-input:hover {
-    border-bottom: 2px solid #ff2e63;
+    border-bottom: 2px solid #00a1ab;
     box-shadow: 0px 2px 5px black;
 }
 
@@ -60,7 +60,7 @@ a:hover {
 }
 
 .navbar {
-    background-color: #ff2e63;
+    background-color: #00a1ab;
     box-shadow: 0px 2px 5px black;
 }
 
@@ -80,7 +80,7 @@ a:hover {
 }
 
 .taskbox {
-    background-color: #ff2e63;
+    background-color: #00a1ab;
     border-radius: 10px;
     box-shadow: 0px 2px 5px black;
     width: 35%;
@@ -98,7 +98,7 @@ a:hover {
 
 
 .taskdiv:hover {
-    border: #ff2e63 3px solid;
+    border: #00a1ab 3px solid;
 }
 
 .taskdiv input, .newtaskdiv input {
@@ -147,7 +147,7 @@ a:hover {
 }
 
 #addButton:hover {
-    color: #ff2e63;
+    color: #00a1ab;
 }
 
 .strikeout {
